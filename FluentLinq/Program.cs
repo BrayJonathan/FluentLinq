@@ -33,7 +33,7 @@ namespace FluentLinq
             xmlUtils.DisplayEmployeesByCity("Alta");
             Console.WriteLine("******************** Add ************************************");
             XElement newNode = xmlUtils.AddEmployee();
-            Console.WriteLine(newNode);
+            // Console.WriteLine(newNode);
             Console.ReadKey();
 
         }

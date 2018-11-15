@@ -56,16 +56,27 @@ namespace FluentLinq
             XElement nodeEmployees = XElement.Load(_Path);
             nodeEmployees.Add(
                 new XElement("Employee",
+
                 new XElement("EmpId", 5),
+
                 new XElement("Name", "Bray"),
+
                 new XElement("Sex", "Male"),
+
                 new XElement("Phone", "06.49.70.24.91", new XAttribute("Type", "CellPhone")),
+
                 new XElement("Address",
+
                     new XElement("Street", "Paris"),
+
                     new XElement("City", "Sottevilles-les-Rouens"),
+
                     new XElement("State", "Haute-Normandie"),
+
                     new XElement("Zip", "76300"),
+
                     new XElement("Country", "France"))));
+
             nodeEmployees.Save(_Path);
             return nodeEmployees;
         }
